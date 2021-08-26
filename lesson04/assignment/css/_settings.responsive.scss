@@ -37,10 +37,9 @@
 // Add breakpoints
 $breakpoints: (
     "xl"            "screen and (min-width: 1300px)",
-    "between"       "screen and (max-width: 1439px)",
     "desk"          "screen and (min-width: 1024px)",
     "lg"            "screen and (min-width: 920px)",
-    "tab"           "screen and (min-width: 767px)",
+    "tab"           "screen and (min-width: 768px)",
     "mobile"        "screen and (max-width: 767px)",
     "infograph"     "screen and (min-width: 540px)",
     "med"           "screen and (min-width: 40em)",
@@ -49,7 +48,5 @@ $breakpoints: (
     "tiny"          "screen and (max-width: 320px)",
     "retina"        "(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx)",
     "ie"            "all and(-ms-high-contrast: none), (-ms-high-contrast: active)",
-    "ipad"          "screen and (min-device-width : 768px) and (max-device-width : 1024px)",
-    "ipad-pro"       "screen and (min-device-width : 1024px) and (max-device-width : 1366px)"
-
+    "ipad"          "screen and (min-device-width : 768px) and (max-device-width : 1024px)"
 ) !default;

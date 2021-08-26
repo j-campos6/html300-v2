@@ -9,6 +9,7 @@
   justify-content: center;
   align-items: center;
   color: $white;
+  font-size: 1REM;
   position: relative;
 }
 
@@ -22,7 +23,7 @@
   a{
     float: left;
     text-align: center;
-    padding: 14px 9vw;
+    padding: 14px 6vw;
     text-decoration: none;
     font-size:1.5REM;
   }
@@ -37,7 +38,6 @@
   justify-content: center;
   align-items: center;
   color: $white;
-  font-size: 1.4REM;
 }
 
 .main-card1{
