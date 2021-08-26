@@ -1,0 +1,74 @@
+@import 'settings.responsive';
+@import 'settings.variables';
+@import 'components.content';
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+
+html, body {
+  height: 100%;
+}
+
+//Grid Body layout
+body{
+  display: grid;
+  grid-template-columns: 33% auto 33%;
+  grid-template-rows: 20% min-Content auto 20%;
+	font-family: 'Lato', sans-serif
+}
+
+//Flex containers for subcomponents
+//Parent flex containers define justify property
+header{
+	display: flex;
+  grid-column-start: span 3;
+  background-color: $red;
+	justify-content: center;
+}
+
+nav{
+		display: flex;
+    grid-column: 1/4;
+    background-color: $green;
+}
+
+aside{
+	display: flex;
+  grid-column: 1/2;
+  background-color: $purple;
+	justify-content: center;
+}
+
+main{
+	display: flex;
+  grid-column-start: span 2;
+  background-color: $orange;
+	justify-content: center;
+}
+
+footer{
+	display: flex;
+  grid-column-start: span 3;
+  background-color: $blue;
+	justify-content: center;
+}
+
+@include media-query(mobile) {
+	body > aside {
+		display: none;
+	}
+
+	body > main {
+		display: flex;
+		grid-column-start: span 3;
+		background-color: $orange;
+		justify-content: center;
+	}
+
+	.nav-card1{
+	  //addtl formatting
+	  a{
+	    padding: 14px 3.5vw;
+			font-size: 4vw;
+	  }
+	}
+}

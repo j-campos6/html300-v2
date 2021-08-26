@@ -1,0 +1,92 @@
+@import 'settings.responsive';
+@import 'settings.variables';
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+
+//Children flex containers
+.header-card1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $white;
+  font-size: 1REM;
+  position: relative;
+}
+
+.nav-card1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $white;
+  //addtl formatting
+  overflow: hidden;
+  a{
+    float: left;
+    text-align: center;
+    padding: 14px 6vw;
+    text-decoration: none;
+    font-size:1.5REM;
+  }
+  a:hover{
+    background-color: #ddd;
+    color: black;
+  }
+}
+
+.aside-card1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $white;
+}
+
+.main-card1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $white;
+}
+
+.footer-card1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $white;
+}
+
+//Transitions/Transform
+//Changed to airplane translate from snowflake rotate.Source pluralsight course "CSS Animation with Transition and Transform by Sandy Ludosky"
+.airplane {
+	//opacity: .6;
+	position: absolute;
+	left: -13vw;
+	align-self: center;
+	width: 12vw;
+	height: auto;
+	-webkit-transition: all 1.5s ease-in-out;
+	transition: all 1.5s ease-in-out;
+}
+
+//Airplane out using variables
+.airplane:hover {
+ 	ms-transform: $apout;
+ 	webkit-transform: $apout;
+ 	transform: $apout;
+}
+
+//Using mixins on the transition. Sizing the airplane for screen sizes
+@include media-query(mobile) {
+  .airplane {
+  	//opacity: .6;
+  	position: absolute;
+  	left: -25vw;
+  	width: 25vw;
+  	height: auto;
+  }
+
+  .airplane:hover {
+    ms-transform: $apout;
+   	webkit-transform: $apout;
+   	transform: $apout;
+  }
+}
