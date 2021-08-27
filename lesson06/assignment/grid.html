@@ -25,7 +25,7 @@
     <div class="row">
       <div class="col-xl-12 col-lg-12 col-sm-12 col-12 bg-dark">
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-          <a class="navbar-brand" href="#">Landing Page</a>
+          <a class="navbar-brand" href="#">Grid Page</a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -41,14 +41,30 @@
       </div>
     </div>
 
-    <!-- Main -->
-    <div class="d-flex justify-content-center h-50 w-100">
-          <img class="img-fluid w-70 h-100" src="../img/background/1.png" alt="Responsive image" id="beach">
+    <!-- Sidebar and Main -->
+    <!-- Responsive to screen sizes -->
+    <div class="row h-50">
+      <!-- sidebar with varying sizes -->
+      <div class="col-xl-2 col-lg-4 col-sm-6 col-12 bg-danger">
+      </div>
+      <!-- Main with varying sizes -->
+      <div class="col-xl-10 col-lg-8 col-sm-6 col-12 bg-warning">
+      </div>
     </div>
 
     <!-- Footer -->
+    <!-- Using tooltips -->
     <div class="row h-25">
-      <div class="col-xl-12 col-lg-12 col-sm-12 col-12 bg-primary">
+      <div class="d-flex col-xl-12 col-lg-12 col-sm-12 col-12 bg-info align-items-center justify-content-center">
+        <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="top" title="Using Tooltips">
+          Using Tooltips
+        </button>
+        <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
+          Tooltip on top
+        </button>
+        <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="top" title="Yaay!">
+          Yaay!
+        </button>
       </div>
     </div>
 
@@ -58,6 +74,7 @@
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="main.js"></script>
 </body>
 
 </html>

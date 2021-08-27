@@ -4,3 +4,18 @@
 @import 'settings.responsive';
 @import 'components.content';
 
+.navbar .navbar-nav .nav-item:not(:last-child) .nav-link {
+  border-right: 2px solid #000000;
+}
+
+.img-fluid, .img-thumbnail {
+  max-width: 20% !important;
+  height: 40% !important;
+}
+
+
+#beach.img-fluid, #beach.img-thumbnails {
+  width: 70% !important;
+  max-width: 70% !important;
+  height: 100% !important;
+}
